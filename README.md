@@ -1,5 +1,5 @@
 # YouCanBeFramed
-A tool which checks click-jacking vulnerability and generates the POC for it .
+A tool which checks clickjacking vulnerability and generates the POC for it .
 
 ## Requirment:
 ### packages 
