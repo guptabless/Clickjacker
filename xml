@@ -4,8 +4,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
     <title>The Blog</title>
+    <link>http://example.com/</link>
     <item>
         <title>&xxe;</title>
+        <link>http://example.com</link>
     </item>
 </channel>
 </rss>
