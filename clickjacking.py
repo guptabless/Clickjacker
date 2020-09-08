@@ -3,7 +3,6 @@ import os
 import bcolors
 import sys, argparse
 
-
 def banner():
     print("""
 
@@ -14,7 +13,7 @@ def banner():
             ██║░░██╗██║░░░░░██║██║░░██╗██╔═██╗░██╗░░██║██╔══██║██║░░██╗██╔═██╗░██║██║╚████║██║░░╚██╗
             ╚█████╔╝███████╗██║╚█████╔╝██║░╚██╗╚█████╔╝██║░░██║╚█████╔╝██║░╚██╗██║██║░╚███║╚██████╔╝
             ░╚════╝░╚══════╝╚═╝░╚════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝░╚═════╝░
-                                                                                          Code by NG          
+                                                                                                    
           """)
 
 
@@ -39,7 +38,7 @@ if len(sys.argv) > 1:
                 print(bcolors.ERR + "Clickjacking Vulnerability not possible")
             else:
                 print("Clickjacking Vulnerability possible")
-                filename = "Clickjacking" + ".html"
+                filename = ".Clickjacking" + ".html"
                 os.path.exists(input_location)
                 f = open(input_location + filename, "w")
                 wrapper = """<html>
@@ -54,7 +53,7 @@ if len(sys.argv) > 1:
                 whole = wrapper % (input_url)
                 f.write(whole)
                 f.close()
-                print("Click-Jacking POC generated and saved in " + input_location)
+                print("Click-Jacking POC generated and saved in " + input_location + filename)
         except:
             print('Please enter python clickjacking.py -d <valid domain name> -o <output location for POC>')
             print("Give Domain with http:// or https://")
@@ -67,7 +66,3 @@ if len(sys.argv) > 1:
 else:
     banner()
     print(bcolors.ERR + 'Please select atleast 1 option from (-d,-o) or -h, with a valid domain name')
-
-
-
-
