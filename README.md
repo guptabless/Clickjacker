@@ -1,4 +1,4 @@
-# YouCanBeFramed
+# Clickjacker
 A tool which checks clickjacking vulnerability and generates the POC for it .
 
 ## Requirment:
